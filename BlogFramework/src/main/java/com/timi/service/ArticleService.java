@@ -8,5 +8,7 @@ import com.timi.utils.ResponseResult;
 public interface ArticleService extends IService<Article> {
     ResponseResult hotArticleList();
 
-    ResponseResult articleList();
+    ResponseResult articleList(Integer pageNum,Integer pageSize,Long categoryId);
+
+    ResponseResult getArticleDetail(Long id);
 }

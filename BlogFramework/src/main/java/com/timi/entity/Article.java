@@ -1,5 +1,6 @@
 package com.timi.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -36,6 +37,8 @@ public class Article{
      * 所属分类id
      */
     private Long categoryId;
+//    @TableField(exist = false)
+//    private String categoryName;
     /**
      * 缩略图
      */
