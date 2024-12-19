@@ -1,4 +1,5 @@
 package com.timi.entity;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ public class User{
     /**
      * 主键
      */
+    @TableId
     private Long id;
     /**
      * 用户名
