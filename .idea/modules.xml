@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Blog/Blog.iml" filepath="$PROJECT_DIR$/Blog/Blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlogAdmin/BlogAdmin.iml" filepath="$PROJECT_DIR$/BlogAdmin/BlogAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlogFramework/BlogFramework.iml" filepath="$PROJECT_DIR$/BlogFramework/BlogFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimiBlog.iml" filepath="$PROJECT_DIR$/TimiBlog.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.timi.mapper.ArticleMapper">
+    <insert id="addArticleTag">
+        INSERT INTO article_tag (article_id,tag_id)
+        VALUES
+        <foreach collection="tagIds" item="tagId" separator=",">
+            (#{articleId},#{tagId})
+        </foreach>
+    </insert>
+    <select id="selectArticleTag" resultType="java.lang.Long">
+        SELECT tag_id
+        FROM article_tag
+        WHERE
+        article_id=#{articleId}
+    </select>
+    <delete id="deleteArticleTag">
+        DELETE FROM article_tag
+        WHERE article_id=#{articleId}
+    </delete>
+</mapper>
